@@ -17,7 +17,7 @@ public class GreetingWebClient {
 		.exchange();
 
 	public String getResult() {
-		return ">> result git test = " + result.flatMap(res -> res.bodyToMono(String.class)).block();
+		return ">> result hi test = " + result.flatMap(res -> res.bodyToMono(String.class)).block();
 	}
 
 }
