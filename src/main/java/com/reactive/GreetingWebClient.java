@@ -18,6 +18,7 @@ public class GreetingWebClient {
 
 	public String getResult() {
 		return ">> result hi test9 = " + result.flatMap(res -> res.bodyToMono(String.class)).block();
+
 	}
 
 }
